@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ .Site.Title }}</title>
+  {{ if .Site.Params.adsenseID }}
+  <script data-ad-client="{{ .Site.Params.adsenseID }}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  {{ end }}
+</head>
+<body>
+  <h1>{{ .Title }}</h1>
+  <main>
+    {{ .Content }}
+  </main>
+  {{ if .Site.Params.adsenseID }}
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="{{ .Site.Params.adsenseID }}"
+    data-ad-slot="1234567890"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  {{ end }}
+</body>
+</html>

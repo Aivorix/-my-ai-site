@@ -1,0 +1,15 @@
+baseURL: "https://rasheedrj.github.io/my-ai-site/"
+languageCode: "en-us"
+title: "موقعي الذكي"
+defaultContentLanguage: "en"
+languages:
+  en:
+    languageName: English
+    weight: 1
+  ar:
+    languageName: العربية
+    weight: 2
+params:
+  adsenseID: "YOUR_ADSENSE_CODE_HERE"
+  telegramBotToken: "YOUR_TELEGRAM_BOT_TOKEN"
+  telegramChatID: "YOUR_TELEGRAM_CHAT_ID"
